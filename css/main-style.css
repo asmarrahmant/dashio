@@ -1,0 +1,36 @@
+/*- Toast ------------------------*/
+.toast-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    pointer-events: none;
+    width: 100%;
+    z-index: 202;
+  }
+  .toast {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #20274c;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    width: auto;
+    white-space: nowrap;
+    position: relative;
+  }
+  .toast::before {
+    vertical-align: middle;
+    color: #27c665;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    float: left;
+  }
+  .toast.show {
+    visibility: visible;
+    animation: fadeInOut 3s;
+  }
